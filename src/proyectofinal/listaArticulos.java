@@ -33,6 +33,7 @@ public class listaArticulos extends javax.swing.JPanel {
         modelo.addColumn("Estado");
         modelo.addColumn("Nombre");
         modelo.addColumn("Fabricante");
+        modelo.addColumn("Fabricante");
         String SQL = "SELECT st.CODIGO, st.TIPO_ARTICULO,st.PRECIO_VENTA,st.PAIS_ORIGEN,CANTIDAD_STOCK,st.ESTADO,st.NOMBRE,fb.NOMBRE as fabri FROM STOCK st inner join FABRICANTE fb on fb.CODIGO = st.FABRICANTE";
         try {
             Statement sql = conexion.getConexion().createStatement();
